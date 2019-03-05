@@ -19,7 +19,17 @@ body {
 a {
   text-decoration: none;
 }
+.logo {
+position: absolute;
+content: "";
+top: 0;
+left: 550px;
+}
+.state-map {
+  position: relative;
+}
 .main-navigation {
+  display: flex;
   font-size: 14px;
   line-height:26px;
   font-weight: 600;
@@ -28,6 +38,12 @@ a {
 }
 .user-navigation {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 56px;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0;
 }
 .user-navigation a {
   color:#000000;
@@ -50,6 +66,7 @@ a {
   font-size: 21px ;
   line-height: 26px ;
   font-weight: 600 ;
+  text-align: center;
 }
 .reasons{
   font-size: 14px ;
@@ -59,6 +76,8 @@ a {
 }
 .advantage-list{
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .blue {
   background-color: #81b3d2;
@@ -83,6 +102,7 @@ a {
 }
 .sedona-prons{
   list-style: none;
+  display: flex;
 }
 
 .accommodation{
@@ -209,7 +229,6 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #766357;
-  display: block;
   cursor: pointer;
 }
 .form-label{
@@ -245,7 +264,6 @@ background: #f2f2f2;
   text-align: center;
   color: #ffffff;
   font-weight: 600;
-  display: block;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -282,7 +300,7 @@ color: #857871;
 .roller {
   border: none;
 }
-.Infrastructure {
+.infrastructure {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -317,6 +335,7 @@ color: #857871;
   line-height: 26px;
   color: #000000;
   font-weight: 600;
+  margin: 0;
 }
 .sort-title{
   font-size: 12px;
@@ -380,6 +399,8 @@ opacity: 1;
 }
 .filter {
   list-style: none;
+  display: flex;
+  margin: 0;
 }
 .rating {
   font-size: 14px;
@@ -481,9 +502,57 @@ color: #81b3d2;
   color: #cacaca;
 }
 .hotel-active {
-  color: #766357;
+  color: #9b8d84;
 }
 .display:hover{
   background-color: #ffffff;
   color: #000000;
+}
+.main-prons {
+  display: flex;
+}
+.sub-point {
+  display: flex;
+}
+.bridge {
+  display: flex;
+}
+.prons {
+  display: flex;
+}
+.hotel-list {
+  text-align: center;
+}
+.main-footer {
+  display: flex;
+justify-content: space-between;
+width: 1160px;
+}
+.social {
+  list-style: none;
+  display: flex;
+  width: 151px;
+  justify-content: space-between;
+}
+.description {
+  text-align: center;
+  width: 637px;
+}
+.inner-form {
+display: flex;
+min-height: 217px;
+width: 1160px;
+justify-content: space-between;
+}
+.inner-nav {
+  display: flex;
+}
+.choice-list {
+  display: flex;
+}
+.results {
+  display: flex;
+}
+.html-acd {
+  display: flex;
 }
