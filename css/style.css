@@ -15,6 +15,7 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  width: 1200px;
 }
 a {
   text-decoration: none;
@@ -23,10 +24,11 @@ a {
 position: absolute;
 content: "";
 top: 0;
-left: 550px;
+left: 460px;
+z-index: 10;
 }
 .state-map {
-  position: relative;
+  padding-left: 388px;
 }
 .main-navigation {
   display: flex;
@@ -34,16 +36,23 @@ left: 550px;
   line-height:26px;
   font-weight: 600;
   color:#000000;
-  text-transform: uppercase;ß
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 15px;
 }
 .user-navigation {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  min-height: 56px;
-  justify-content: space-between;
+  min-height: 42px;
   width: 1160px;
   margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+.photo {
+  padding-left: 148px;
 }
 .user-navigation a {
   color:#000000;
@@ -61,48 +70,82 @@ left: 550px;
   background-image: url("../img/background-main.png");
   background-position: top center;
   background-repeat: no-repeat;
+  min-height: 512px;
+  background-size: 1200px 507px;
+  position: relative;
+}
+.mount-img::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: url(../img/polygon.png);
+  bottom: 0;
+  left: 0;
+  width:1200px ;
+  height:59px ;
 }
 .main-description {
   font-size: 21px ;
   line-height: 26px ;
   font-weight: 600 ;
   text-align: center;
+  width: 440px;
+margin-top: 56px;
+  margin-left: 308px;
 }
 .reasons{
   font-size: 14px ;
   line-height: 26px ;
   font-weight: 400 ;
   color: #333333;
+  margin-top: 27px;
+    margin-right: 145px;
+    margin-bottom: 50px;
 }
 .advantage-list{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 .blue {
   background-color: #81b3d2;
+  width: 329px;
 }
 .white-header{
   font-size: 21px;
   line-height: 21px;
   font-weight: 600;
   color: #ffffff;
+  text-align: center;
 }
 .white-reason{
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
 }
 .white-description{
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
+}
+.first-blue {
+      margin-left: -13px;
+  width: 284px;
+      margin-top: 22px;
+}
+.second-blue {
+  width: 303px;
 }
 .sedona-prons{
   list-style: none;
   display: flex;
+  padding: 0;
 }
 
 .accommodation{
@@ -110,6 +153,7 @@ left: 550px;
   line-height: 21px;
   font-weight: 600;
   color: #000000;
+  text-align: center;
 }
 .accommodation-description{
   font-size: 14px;
@@ -117,6 +161,8 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  width: 258px;
+  text-align: center;
 }
 
 .food{
@@ -124,6 +170,7 @@ left: 550px;
   line-height: 21px;
   font-weight: 600;
   color: #000000;
+  text-align: center;
 }
 .food-description{
   font-size: 14px;
@@ -131,6 +178,8 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  text-align: center;
+  width: 290px;
 }
 
 .souvenirs{
@@ -138,6 +187,7 @@ left: 550px;
   line-height: 21px;
   font-weight: 600;
   color: #000000;
+  text-align: center;
 }
 .souvenirs-description{
   font-size: 14px;
@@ -145,6 +195,8 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  text-align: center;
+  width: 279px;
 }
 .sights-header{
   font-size: 21px;
@@ -152,6 +204,7 @@ left: 550px;
   font-weight: 600;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
 }
 .sights-reason{
   font-size: 14px;
@@ -159,6 +212,7 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  text-align: center;
 }
 .sights-description{
   font-size: 14px;
@@ -166,6 +220,8 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  width: 213px;
+  text-align: center;
 }
 .road-header{
   font-size: 21px;
@@ -173,6 +229,7 @@ left: 550px;
   font-weight: 600;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
 }
 .road-reason{
   font-size: 14px;
@@ -180,6 +237,7 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  text-align: center;
 }
 .road-description{
   font-size: 14px;
@@ -187,12 +245,15 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  width: 270px;
+  text-align: center;
 }
 .tourists-header{
   font-size: 21px;
   line-height: 21px;
   font-weight: 600;
   color: #000000;
+  text-align: center;
 }
 .tourists-reason{
   font-size: 14px;
@@ -200,6 +261,7 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  text-align: center;
 }
 .tourists-description{
   font-size: 14px;
@@ -207,6 +269,8 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  width: 250px;
+  text-align: center;
 }
 .interest{
   font-size: 30px;
@@ -221,6 +285,9 @@ left: 550px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  width: 440px;
+  text-align: center;
+  margin: 0;
 }
 .search {
   font-size: 21px;
@@ -510,18 +577,51 @@ color: #81b3d2;
 }
 .main-prons {
   display: flex;
+height: 256px;
+overflow: hidden;
+}
+.first-mount {
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+}
+.first-img{
+  position: absolute;
+  left: 50%;
+  top:50%;
+transform: translate(-50%,-50%);
+min-width: 100%;
+min-height: 100%;
 }
 .sub-point {
+  margin-top: 142px;
+  margin-bottom: 69px;
   display: flex;
+  width: 100%;
 }
 .bridge {
   display: flex;
+  height: 256px;
+  overflow: hidden;
+}
+.second-mount {
+  position: relative;
+  width: 800px;
+}
+.second-img {
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+min-width: 100%;
+min-height: 100%;
 }
 .prons {
   display: flex;
 }
 .hotel-list {
   text-align: center;
+  position: relative;
 }
 .main-footer {
   display: flex;
@@ -536,7 +636,6 @@ width: 1160px;
 }
 .description {
   text-align: center;
-  width: 637px;
 }
 .inner-form {
 display: flex;
@@ -555,4 +654,80 @@ justify-content: space-between;
 }
 .html-acd {
   display: flex;
+}
+.sedona-accommodation {
+  position: relative;
+}
+.sedona-accommodation::before {
+  position: absolute;
+  content: "";
+  width:75px ;
+  height:72px ;
+  top: -81px;
+  left: 90px;
+  background: url(../img/icon-1.svg)
+}
+.sedona-food
+{
+  position: relative;
+  padding-left: 127px;
+}
+.sedona-food::before {
+  position: absolute;
+  content: "";
+  width:74px ;
+  height:70px ;
+  top: -81px;
+  left: 234px;
+  background: url(../img/icon-3.svg)
+}
+.sedona-souvenirs {
+  position: relative;
+      padding-left: 115px;
+}
+.sedona-souvenirs::before {
+  position: absolute;
+  content: "";
+  width:64px ;
+  height:76px ;
+  top: -86px;
+  left: 222px;
+  background: url(../img/icon-2.svg)
+}
+.index-sights {
+  padding-top: 26px;
+padding-bottom: 75px;
+padding-right: 129px;
+  background-color: #eeeeee;
+}
+.choice {
+  position: absolute;
+content: "";
+background-color: white;
+top: 136px;
+left: 406px;
+width: 570px;
+height: 398px;
+}
+.social-link{
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  align-items: center;
+}
+.htls {
+padding-left: 166px;
+}
+.welcome-img {
+  padding-left: 300px;
+  padding-top: 74px;
+}
+.real-town {
+  margin-top: 48px;
+      margin-bottom: 23px;
+    margin-left: 68px;
+    width: 123px;
+}
+.first-number {
+      margin-right: 70px;
 }
